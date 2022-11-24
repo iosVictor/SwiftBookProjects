@@ -14,8 +14,7 @@ class ViewController: UIViewController {
     private var numberOfDays = ""
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
     }
 
     @IBAction func datePicker(_ sender: UIDatePicker) {
