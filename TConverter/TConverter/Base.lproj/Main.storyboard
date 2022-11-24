@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="hpA-jK-mOM">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="6SV-yN-kGd">
+                                <rect key="frame" x="75.666666666666686" y="67" width="242" height="45"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrX-Op-UNB">
+                                <rect key="frame" x="167.66666666666666" y="349" width="58" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBt-2U-4GC">
+                                <rect key="frame" x="160.66666666666666" y="461" width="72" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XQb-kq-jt2">
+                                <rect key="frame" x="14" y="411" width="365" height="31"/>
+                                <color key="tintColor" red="1" green="0.1215417179" blue="0.14787682460000001" alpha="0.8980392157" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="bRW-mL-qVH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="umg-r0-DVX"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6SV-yN-kGd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="10M-fa-WeQ"/>
+                            <constraint firstItem="XQb-kq-jt2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2SZ-JK-bnJ"/>
+                            <constraint firstItem="hpA-jK-mOM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3dB-WP-Aaf"/>
+                            <constraint firstItem="hpA-jK-mOM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="3mi-jW-IrP"/>
+                            <constraint firstItem="SrX-Op-UNB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HDl-LL-J6w"/>
+                            <constraint firstItem="KBt-2U-4GC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jl0-Ba-i3y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="hpA-jK-mOM" secondAttribute="top" constant="59" id="NiZ-rZ-weh"/>
+                            <constraint firstItem="XQb-kq-jt2" firstAttribute="top" secondItem="SrX-Op-UNB" secondAttribute="bottom" constant="20" id="Phd-fP-IQT"/>
+                            <constraint firstItem="KBt-2U-4GC" firstAttribute="top" secondItem="XQb-kq-jt2" secondAttribute="bottom" constant="20" id="UNQ-yL-6Pj"/>
+                            <constraint firstItem="6SV-yN-kGd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eRx-YW-umk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hpA-jK-mOM" secondAttribute="trailing" id="mmh-sM-RmR"/>
+                            <constraint firstItem="XQb-kq-jt2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rar-0o-stC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cenliusLabel" destination="SrX-Op-UNB" id="fxf-ey-kcC"/>
+                        <outlet property="fahrenheitLabel" destination="KBt-2U-4GC" id="egy-Sa-ldk"/>
+                        <outlet property="slider" destination="XQb-kq-jt2" id="XiA-cW-5fb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sun" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
