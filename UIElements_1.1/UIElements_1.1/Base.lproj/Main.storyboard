@@ -20,13 +20,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-Lc-t9i">
                                 <rect key="frame" x="16" y="192" width="361" height="506"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Во-первых, не должен. А, во-вторых, вот несколько доводов:
+                                <string key="text">Во-первых, не должен. А, во-вторых, вот несколько доводов:
 · мы занимаемся только мобильной разработкой. Основательно и последовательно обучаем людей с 2014 года;
 · обучение для нас не ограничено временем урока: мы хотим, чтобы каждый был погружён в атмосферу разработки с головой. Мы пишем и переводим статьи, записываем интервью с разработчиками, рекрутерами и работодателями, создаём видеоуроки, задачник и много другого полезного контента. А ещё у нас есть iOS-инкубатор, в котором ты можешь продолжить обучение.
 Разумеется, лучше почитать отзывы и оценки наших учеников. 31 «пятёрка» и пять «четвёрок» от выпускников - то, чем мы гордимся.                        Во-первых, не должен. А, во-вторых, вот несколько доводов:
 · мы занимаемся только мобильной разработкой. Основательно и последовательно обучаем людей с 2014 года;
 · обучение для нас не ограничено временем урока: мы хотим, чтобы каждый был погружён в атмосферу разработки с головой. Мы пишем и переводим статьи, записываем интервью с разработчиками, рекрутерами и работодателями, создаём видеоуроки, задачник и много другого полезного контента. А ещё у нас есть iOS-инкубатор, в котором ты можешь продолжить обучение.
-Разумеется, лучше почитать отзывы и оценки наших учеников. 31 «пятёрка» и пять «четвёрок» от выпускников - то, чем мы гордимся.</mutableString>
+Разумеется, лучше почитать отзывы и оценки наших учеников. 31 «пятёрка» и пять «четвёрок» от выпускников - то, чем мы гордимся.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -37,23 +37,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oih-s9-GrJ">
+                                <rect key="frame" x="283" y="101" width="94" height="32"/>
+                                <connections>
+                                    <action selector="sizeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="kIV-SP-Iz3"/>
+                                </connections>
+                            </stepper>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-7E-GVE">
+                                <rect key="frame" x="186.66666666666666" y="435" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rEv-ey-zPg">
+                                <rect key="frame" x="16" y="192" width="361" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.54465116810000003" green="0.76942896839999997" blue="0.53782320800000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oih-s9-GrJ" secondAttribute="trailing" constant="16" id="0ev-kT-PEP"/>
                             <constraint firstItem="GpS-Lc-t9i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4ci-id-Iam"/>
+                            <constraint firstItem="h7V-7E-GVE" firstAttribute="centerY" secondItem="GpS-Lc-t9i" secondAttribute="centerY" id="7s8-R0-xR9"/>
                             <constraint firstItem="GpS-Lc-t9i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="84G-5J-ieE"/>
                             <constraint firstItem="5dc-L9-jlk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="ANj-kJ-jFf"/>
+                            <constraint firstItem="rEv-ey-zPg" firstAttribute="top" secondItem="GpS-Lc-t9i" secondAttribute="top" id="DeI-Am-lCe"/>
                             <constraint firstItem="5dc-L9-jlk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GkB-Zr-99S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GpS-Lc-t9i" secondAttribute="trailing" constant="16" id="HUH-sL-TJz"/>
+                            <constraint firstItem="rEv-ey-zPg" firstAttribute="width" secondItem="GpS-Lc-t9i" secondAttribute="width" id="Nk0-9F-HPG"/>
+                            <constraint firstItem="rEv-ey-zPg" firstAttribute="centerX" secondItem="GpS-Lc-t9i" secondAttribute="centerX" id="T6J-8p-CtP"/>
                             <constraint firstItem="GpS-Lc-t9i" firstAttribute="leading" secondItem="5dc-L9-jlk" secondAttribute="leading" id="Wjj-SW-Wr3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GpS-Lc-t9i" secondAttribute="bottom" constant="120" id="eSj-MZ-XPo"/>
+                            <constraint firstItem="h7V-7E-GVE" firstAttribute="centerX" secondItem="GpS-Lc-t9i" secondAttribute="centerX" id="kjC-AE-lkA"/>
+                            <constraint firstItem="oih-s9-GrJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="mBv-U4-O6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="5dc-L9-jlk" secondAttribute="trailing" constant="366" id="ucv-AX-GCM"/>
                             <constraint firstItem="GpS-Lc-t9i" firstAttribute="top" secondItem="5dc-L9-jlk" secondAttribute="bottom" constant="64" id="wyg-bL-L0m"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="h7V-7E-GVE" id="Qh1-VQ-lJy"/>
                         <outlet property="countLabel" destination="5dc-L9-jlk" id="dma-8R-Eph"/>
+                        <outlet property="progressView" destination="rEv-ey-zPg" id="fj7-Kh-ZvO"/>
+                        <outlet property="stepper" destination="oih-s9-GrJ" id="21m-Gy-ock"/>
                         <outlet property="textView" destination="GpS-Lc-t9i" id="WdY-Qj-f3Y"/>
                         <outlet property="textViewBottomConstraint" destination="eSj-MZ-XPo" id="MnQ-IV-eBF"/>
                     </connections>

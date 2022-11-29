@@ -12,27 +12,62 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var progressView: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textView.delegate = self
-        textView.text = ""
+        
+        textView.isHidden = true
+        
+//        textView.text = ""
         textView.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 17)
         textView.backgroundColor = self.view.backgroundColor
         textView.layer.cornerRadius = 10
         
+        stepper.value = 17
+        stepper.minimumValue = 10
+        stepper.maximumValue = 25
+        
+        stepper.tintColor = .white
+        stepper.backgroundColor = .gray
+        stepper.layer.cornerRadius = 5
+        
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        activityIndicator.startAnimating()
+//        UIApplication.shared.beginIgnoringInteractionEvents()
+        
+        progressView.setProgress(0, animated: true)
+        
+        // Отслеживаем появление клавиатуры
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(updateTextView(notification:)),
                                                name: UIResponder.keyboardWillShowNotification,
                                                object: nil)
         
+        // Отслеживаем скрытие клавиатуры
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(updateTextView(notification:)),
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
+        
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            if self.progressView.progress != 1 {
+                self.progressView.progress += 0.2
+            } else {
+                self.activityIndicator.stopAnimating()
+                self.textView.isHidden = false
+    //            UIApplication.shared.endIgnoringInteractionEvents()
+                self.progressView.isHidden = true
+            }
+        }
     }
 
+    // Скрытие клавиатуры по тапу за пределами Text View
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         
@@ -60,6 +95,15 @@ class ViewController: UIViewController {
         
         textView.scrollRangeToVisible(textView.selectedRange)
     }
+    
+    @IBAction func sizeFont(_ sender: UIStepper) {
+        
+        let font = textView.font?.fontName
+        let fontSize = CGFloat(sender.value)
+        
+        textView.font = UIFont(name: font!, size: fontSize)
+    }
+    
 }
 
 extension ViewController: UITextViewDelegate {
