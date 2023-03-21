@@ -14,6 +14,7 @@
 		ED8222C429C9F093006E13BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8222C229C9F093006E13BC /* LaunchScreen.storyboard */; };
 		ED8222CC29C9F611006E13BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222CB29C9F611006E13BC /* MainViewController.swift */; };
 		ED8222CE29CA2BB3006E13BC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */; };
+		ED8222D029CA4161006E13BC /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222CF29CA4161006E13BC /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ED8222C529C9F093006E13BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED8222CB29C9F611006E13BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		ED8222CF29CA4161006E13BC /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				ED8222B729C9F093006E13BC /* AppDelegate.swift */,
 				ED8222B929C9F093006E13BC /* SceneDelegate.swift */,
 				ED8222CB29C9F611006E13BC /* MainViewController.swift */,
+				ED8222CF29CA4161006E13BC /* PlaceModel.swift */,
 				ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */,
 				ED8222BD29C9F093006E13BC /* Main.storyboard */,
 				ED8222C029C9F093006E13BC /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				ED8222CC29C9F611006E13BC /* MainViewController.swift in Sources */,
 				ED8222B829C9F093006E13BC /* AppDelegate.swift in Sources */,
+				ED8222D029CA4161006E13BC /* PlaceModel.swift in Sources */,
 				ED8222CE29CA2BB3006E13BC /* CustomTableViewCell.swift in Sources */,
 				ED8222BA29C9F093006E13BC /* SceneDelegate.swift in Sources */,
 			);
