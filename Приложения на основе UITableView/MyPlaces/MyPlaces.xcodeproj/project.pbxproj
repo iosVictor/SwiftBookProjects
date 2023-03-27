@@ -10,6 +10,7 @@
 		ED40E1A329CE37D30022883A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ED40E1A229CE37D30022883A /* Realm */; };
 		ED40E1A529CE37D30022883A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED40E1A429CE37D30022883A /* RealmSwift */; };
 		ED40E1A729CE40EC0022883A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40E1A629CE40EC0022883A /* StorageManager.swift */; };
+		ED40E1A929D2170D0022883A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40E1A829D2170D0022883A /* RatingControl.swift */; };
 		ED8222B829C9F093006E13BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222B729C9F093006E13BC /* AppDelegate.swift */; };
 		ED8222BA29C9F093006E13BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222B929C9F093006E13BC /* SceneDelegate.swift */; };
 		ED8222BF29C9F093006E13BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8222BD29C9F093006E13BC /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		ED40E1A629CE40EC0022883A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		ED40E1A829D2170D0022883A /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		ED8222B429C9F093006E13BC /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8222B729C9F093006E13BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8222B929C9F093006E13BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				ED8222CF29CA4161006E13BC /* PlaceModel.swift */,
 				ED40E1A629CE40EC0022883A /* StorageManager.swift */,
 				ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */,
+				ED40E1A829D2170D0022883A /* RatingControl.swift */,
 				ED8222BD29C9F093006E13BC /* Main.storyboard */,
 				ED8222C029C9F093006E13BC /* Assets.xcassets */,
 				ED8222C229C9F093006E13BC /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 				ED8222D229CDF308006E13BC /* NewPlaceViewController.swift in Sources */,
 				ED8222B829C9F093006E13BC /* AppDelegate.swift in Sources */,
 				ED40E1A729CE40EC0022883A /* StorageManager.swift in Sources */,
+				ED40E1A929D2170D0022883A /* RatingControl.swift in Sources */,
 				ED8222D029CA4161006E13BC /* PlaceModel.swift in Sources */,
 				ED8222CE29CA2BB3006E13BC /* CustomTableViewCell.swift in Sources */,
 				ED8222BA29C9F093006E13BC /* SceneDelegate.swift in Sources */,
