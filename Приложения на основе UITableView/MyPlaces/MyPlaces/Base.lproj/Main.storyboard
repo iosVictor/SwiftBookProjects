@@ -162,7 +162,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l11-j4-s8l" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l11-j4-s8l" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
                                                     <rect key="frame" x="70.666666666666686" y="48" width="252" height="44"/>
                                                 </stackView>
                                             </subviews>
@@ -203,7 +203,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pi4-hg-BP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Jzf-97-CZ6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="-21"/>
+            <point key="canvasLocation" x="1446.5648854961833" y="-21.126760563380284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Nu-Ac-i4s">
@@ -254,7 +254,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ACc-md-3Os">
-                                <rect key="frame" x="0.0" y="135" width="393" height="683"/>
+                                <rect key="frame" x="0.0" y="135" width="393" height="717"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="QEA-By-mXR" customClass="CustomTableViewCell" customModule="MyPlaces" customModuleProvider="target">
@@ -335,7 +335,7 @@
                             <constraint firstItem="ACc-md-3Os" firstAttribute="leading" secondItem="nU0-xl-spz" secondAttribute="leading" id="8sw-fQ-TE7"/>
                             <constraint firstItem="ACc-md-3Os" firstAttribute="top" secondItem="RZK-jt-OJi" secondAttribute="bottom" constant="1" id="H08-qg-4oa"/>
                             <constraint firstItem="RZK-jt-OJi" firstAttribute="leading" secondItem="nU0-xl-spz" secondAttribute="leading" id="ZsD-8L-bqW"/>
-                            <constraint firstItem="ACc-md-3Os" firstAttribute="bottom" secondItem="nU0-xl-spz" secondAttribute="bottom" id="fPD-3R-E1M"/>
+                            <constraint firstItem="ACc-md-3Os" firstAttribute="bottom" secondItem="xVD-dS-44z" secondAttribute="bottom" id="fPD-3R-E1M"/>
                             <constraint firstItem="ACc-md-3Os" firstAttribute="trailing" secondItem="nU0-xl-spz" secondAttribute="trailing" id="kn8-d5-E0B"/>
                             <constraint firstItem="RZK-jt-OJi" firstAttribute="trailing" secondItem="nU0-xl-spz" secondAttribute="trailing" id="o0r-xu-kW9"/>
                             <constraint firstItem="RZK-jt-OJi" firstAttribute="top" secondItem="nU0-xl-spz" secondAttribute="top" id="tfu-45-Tfc"/>
@@ -364,6 +364,11 @@
             <point key="canvasLocation" x="506" y="-21"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="l11-j4-s8l">
+            <size key="intrinsicContentSize" width="252" height="44"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="tKI-Ii-GFf"/>
     </inferredMetricsTieBreakers>
