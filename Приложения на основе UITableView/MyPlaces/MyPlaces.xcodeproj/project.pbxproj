@@ -21,6 +21,7 @@
 		ED8222D029CA4161006E13BC /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222CF29CA4161006E13BC /* PlaceModel.swift */; };
 		ED8222D229CDF308006E13BC /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222D129CDF308006E13BC /* NewPlaceViewController.swift */; };
 		EDB8FB5129D2DC85006C6316 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = EDB8FB5029D2DC85006C6316 /* Cosmos */; };
+		EDE0904C29D33B6A00AE57E5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0904B29D33B6A00AE57E5 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		ED8222CF29CA4161006E13BC /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		ED8222D129CDF308006E13BC /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
+		EDE0904B29D33B6A00AE57E5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				ED8222B929C9F093006E13BC /* SceneDelegate.swift */,
 				ED8222CB29C9F611006E13BC /* MainViewController.swift */,
 				ED8222D129CDF308006E13BC /* NewPlaceViewController.swift */,
+				EDE0904B29D33B6A00AE57E5 /* MapViewController.swift */,
 				ED8222CF29CA4161006E13BC /* PlaceModel.swift */,
 				ED40E1A629CE40EC0022883A /* StorageManager.swift */,
 				ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */,
@@ -172,6 +175,7 @@
 				ED8222D229CDF308006E13BC /* NewPlaceViewController.swift in Sources */,
 				ED8222B829C9F093006E13BC /* AppDelegate.swift in Sources */,
 				ED40E1A729CE40EC0022883A /* StorageManager.swift in Sources */,
+				EDE0904C29D33B6A00AE57E5 /* MapViewController.swift in Sources */,
 				ED40E1A929D2170D0022883A /* RatingControl.swift in Sources */,
 				ED8222D029CA4161006E13BC /* PlaceModel.swift in Sources */,
 				ED8222CE29CA2BB3006E13BC /* CustomTableViewCell.swift in Sources */,
