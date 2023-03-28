@@ -20,6 +20,7 @@
 		ED8222CE29CA2BB3006E13BC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222CD29CA2BB3006E13BC /* CustomTableViewCell.swift */; };
 		ED8222D029CA4161006E13BC /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222CF29CA4161006E13BC /* PlaceModel.swift */; };
 		ED8222D229CDF308006E13BC /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8222D129CDF308006E13BC /* NewPlaceViewController.swift */; };
+		EDB8FB5129D2DC85006C6316 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = EDB8FB5029D2DC85006C6316 /* Cosmos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB8FB5129D2DC85006C6316 /* Cosmos in Frameworks */,
 				ED40E1A529CE37D30022883A /* RealmSwift in Frameworks */,
 				ED40E1A329CE37D30022883A /* Realm in Frameworks */,
 			);
@@ -105,6 +107,7 @@
 			packageProductDependencies = (
 				ED40E1A229CE37D30022883A /* Realm */,
 				ED40E1A429CE37D30022883A /* RealmSwift */,
+				EDB8FB5029D2DC85006C6316 /* Cosmos */,
 			);
 			productName = MyPlaces;
 			productReference = ED8222B429C9F093006E13BC /* MyPlaces.app */;
@@ -136,6 +139,7 @@
 			mainGroup = ED8222AB29C9F093006E13BC;
 			packageReferences = (
 				ED40E1A129CE37D30022883A /* XCRemoteSwiftPackageReference "realm-swift" */,
+				EDB8FB4F29D2DC84006C6316 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = ED8222B529C9F093006E13BC /* Products */;
 			projectDirPath = "";
@@ -407,6 +411,14 @@
 				minimumVersion = 10.37.0;
 			};
 		};
+		EDB8FB4F29D2DC84006C6316 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 22.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -419,6 +431,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED40E1A129CE37D30022883A /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		EDB8FB5029D2DC85006C6316 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDB8FB4F29D2DC84006C6316 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
