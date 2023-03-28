@@ -258,6 +258,9 @@
                             <constraint firstItem="CZC-4j-Be5" firstAttribute="leading" secondItem="5mC-3E-7eA" secondAttribute="leading" id="yzk-5B-Nw2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="CZC-4j-Be5" id="ePy-Co-jwk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NjA-v5-FWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
