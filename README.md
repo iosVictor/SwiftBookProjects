@@ -8,3 +8,6 @@ _______________________________
 ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/MealTime.gif "MealTime")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/ToDoList.gif "ToDoList")
 _______________________________
 ### First Apps with Swift Language
+![](https://github.com/iosVictor/SwiftBookProjects/blob/main/PassDataProject.gif "PassDataProject")      ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/TConverter.gif "TConverter")       ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/WeeklyFinder.gif "WeeklyFinder")
+_______________________________
+### My first apps in Swift
