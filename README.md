@@ -1,6 +1,9 @@
 # SwiftBookProjects
 ## Study SwiftBook
 _______________________________
+### Приложения на основе UITableView
+![](https://github.com/iosVictor/SwiftBookProjects/blob/main/MyPlaces1.gif "MyPlaces")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/MyPlaces2.gif "MyPlaces")
+_______________________________
 ### Apps Based on Collections
 ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/EmojiReader.gif "EmojiReader")    ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/PhotoTapps.gif "PhotoTapps")
 _______________________________
@@ -15,5 +18,3 @@ _______________________________
 _______________________________
 ### UIKit Framework
 ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/ArtCover.gif "ArtCover")      ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/ArtCover_1.1.gif "ArtCover_1.1")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/AwesomeBrowser.gif "AwesomeBrowser")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/GestureRecognizer.gif "GestureRecognizer")    ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UIButtonAndLabel.gif "UIButtonAndLabel")    ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UIContainerView.gif "UIContainerView")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UIElements.gif "UIElements")    ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UIElements_1.1.gif "UIElements_1.1")      ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UIPageView.gif "UIPageView")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UISegmentedControl.gif "UISegmentedControl")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UIStackView.gif "UIStackView")     ![](https://github.com/iosVictor/SwiftBookProjects/blob/main/UITabBar.gif "UITabBar")
-_______________________________
-### Приложения на основе UITableView
