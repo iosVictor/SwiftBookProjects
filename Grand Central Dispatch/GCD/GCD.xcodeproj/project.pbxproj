@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED4F94122927CFCD007AEFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F94112927CFCD007AEFF2 /* AppDelegate.swift */; };
-		ED4F94142927CFCD007AEFF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F94132927CFCD007AEFF2 /* SceneDelegate.swift */; };
-		ED4F94162927CFCD007AEFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F94152927CFCD007AEFF2 /* ViewController.swift */; };
-		ED4F94192927CFCD007AEFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4F94172927CFCD007AEFF2 /* Main.storyboard */; };
-		ED4F941B2927CFCE007AEFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4F941A2927CFCE007AEFF2 /* Assets.xcassets */; };
-		ED4F941E2927CFCE007AEFF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4F941C2927CFCE007AEFF2 /* LaunchScreen.storyboard */; };
+		ED132F4329DDC3D40025A9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED132F4229DDC3D40025A9F0 /* AppDelegate.swift */; };
+		ED132F4529DDC3D40025A9F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED132F4429DDC3D40025A9F0 /* SceneDelegate.swift */; };
+		ED132F4729DDC3D40025A9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED132F4629DDC3D40025A9F0 /* ViewController.swift */; };
+		ED132F4A29DDC3D40025A9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED132F4829DDC3D40025A9F0 /* Main.storyboard */; };
+		ED132F4C29DDC3D50025A9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED132F4B29DDC3D50025A9F0 /* Assets.xcassets */; };
+		ED132F4F29DDC3D50025A9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED132F4D29DDC3D50025A9F0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED4F940E2927CFCD007AEFF2 /* MySwiftBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED4F94112927CFCD007AEFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED4F94132927CFCD007AEFF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED4F94152927CFCD007AEFF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ED4F94182927CFCD007AEFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ED4F941A2927CFCE007AEFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED4F941D2927CFCE007AEFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED4F941F2927CFCE007AEFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED132F3F29DDC3D40025A9F0 /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED132F4229DDC3D40025A9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED132F4429DDC3D40025A9F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED132F4629DDC3D40025A9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED132F4929DDC3D40025A9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED132F4B29DDC3D50025A9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED132F4E29DDC3D50025A9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED132F5029DDC3D50025A9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ED4F940B2927CFCD007AEFF2 /* Frameworks */ = {
+		ED132F3C29DDC3D40025A9F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED4F94052927CFCD007AEFF2 = {
+		ED132F3629DDC3D30025A9F0 = {
 			isa = PBXGroup;
 			children = (
-				ED4F94102927CFCD007AEFF2 /* MySwiftBookApp */,
-				ED4F940F2927CFCD007AEFF2 /* Products */,
+				ED132F4129DDC3D40025A9F0 /* GCD */,
+				ED132F4029DDC3D40025A9F0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ED4F940F2927CFCD007AEFF2 /* Products */ = {
+		ED132F4029DDC3D40025A9F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED4F940E2927CFCD007AEFF2 /* MySwiftBookApp.app */,
+				ED132F3F29DDC3D40025A9F0 /* GCD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED4F94102927CFCD007AEFF2 /* MySwiftBookApp */ = {
+		ED132F4129DDC3D40025A9F0 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				ED4F94112927CFCD007AEFF2 /* AppDelegate.swift */,
-				ED4F94132927CFCD007AEFF2 /* SceneDelegate.swift */,
-				ED4F94152927CFCD007AEFF2 /* ViewController.swift */,
-				ED4F94172927CFCD007AEFF2 /* Main.storyboard */,
-				ED4F941A2927CFCE007AEFF2 /* Assets.xcassets */,
-				ED4F941C2927CFCE007AEFF2 /* LaunchScreen.storyboard */,
-				ED4F941F2927CFCE007AEFF2 /* Info.plist */,
+				ED132F4229DDC3D40025A9F0 /* AppDelegate.swift */,
+				ED132F4429DDC3D40025A9F0 /* SceneDelegate.swift */,
+				ED132F4629DDC3D40025A9F0 /* ViewController.swift */,
+				ED132F4829DDC3D40025A9F0 /* Main.storyboard */,
+				ED132F4B29DDC3D50025A9F0 /* Assets.xcassets */,
+				ED132F4D29DDC3D50025A9F0 /* LaunchScreen.storyboard */,
+				ED132F5029DDC3D50025A9F0 /* Info.plist */,
 			);
-			path = MySwiftBookApp;
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED4F940D2927CFCD007AEFF2 /* MySwiftBookApp */ = {
+		ED132F3E29DDC3D40025A9F0 /* GCD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED4F94222927CFCE007AEFF2 /* Build configuration list for PBXNativeTarget "MySwiftBookApp" */;
+			buildConfigurationList = ED132F5329DDC3D50025A9F0 /* Build configuration list for PBXNativeTarget "GCD" */;
 			buildPhases = (
-				ED4F940A2927CFCD007AEFF2 /* Sources */,
-				ED4F940B2927CFCD007AEFF2 /* Frameworks */,
-				ED4F940C2927CFCD007AEFF2 /* Resources */,
+				ED132F3B29DDC3D40025A9F0 /* Sources */,
+				ED132F3C29DDC3D40025A9F0 /* Frameworks */,
+				ED132F3D29DDC3D40025A9F0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MySwiftBookApp;
-			productName = MySwiftBookApp;
-			productReference = ED4F940E2927CFCD007AEFF2 /* MySwiftBookApp.app */;
+			name = GCD;
+			productName = GCD;
+			productReference = ED132F3F29DDC3D40025A9F0 /* GCD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ED4F94062927CFCD007AEFF2 /* Project object */ = {
+		ED132F3729DDC3D30025A9F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					ED4F940D2927CFCD007AEFF2 = {
-						CreatedOnToolsVersion = 14.1;
+					ED132F3E29DDC3D40025A9F0 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = ED4F94092927CFCD007AEFF2 /* Build configuration list for PBXProject "MySwiftBookApp" */;
+			buildConfigurationList = ED132F3A29DDC3D30025A9F0 /* Build configuration list for PBXProject "GCD" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = ED4F94052927CFCD007AEFF2;
-			productRefGroup = ED4F940F2927CFCD007AEFF2 /* Products */;
+			mainGroup = ED132F3629DDC3D30025A9F0;
+			productRefGroup = ED132F4029DDC3D40025A9F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED4F940D2927CFCD007AEFF2 /* MySwiftBookApp */,
+				ED132F3E29DDC3D40025A9F0 /* GCD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ED4F940C2927CFCD007AEFF2 /* Resources */ = {
+		ED132F3D29DDC3D40025A9F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4F941E2927CFCE007AEFF2 /* LaunchScreen.storyboard in Resources */,
-				ED4F941B2927CFCE007AEFF2 /* Assets.xcassets in Resources */,
-				ED4F94192927CFCD007AEFF2 /* Main.storyboard in Resources */,
+				ED132F4F29DDC3D50025A9F0 /* LaunchScreen.storyboard in Resources */,
+				ED132F4C29DDC3D50025A9F0 /* Assets.xcassets in Resources */,
+				ED132F4A29DDC3D40025A9F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ED4F940A2927CFCD007AEFF2 /* Sources */ = {
+		ED132F3B29DDC3D40025A9F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4F94162927CFCD007AEFF2 /* ViewController.swift in Sources */,
-				ED4F94122927CFCD007AEFF2 /* AppDelegate.swift in Sources */,
-				ED4F94142927CFCD007AEFF2 /* SceneDelegate.swift in Sources */,
+				ED132F4729DDC3D40025A9F0 /* ViewController.swift in Sources */,
+				ED132F4329DDC3D40025A9F0 /* AppDelegate.swift in Sources */,
+				ED132F4529DDC3D40025A9F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED4F94172927CFCD007AEFF2 /* Main.storyboard */ = {
+		ED132F4829DDC3D40025A9F0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED4F94182927CFCD007AEFF2 /* Base */,
+				ED132F4929DDC3D40025A9F0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ED4F941C2927CFCE007AEFF2 /* LaunchScreen.storyboard */ = {
+		ED132F4D29DDC3D50025A9F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ED4F941D2927CFCE007AEFF2 /* Base */,
+				ED132F4E29DDC3D50025A9F0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ED4F94202927CFCE007AEFF2 /* Debug */ = {
+		ED132F5129DDC3D50025A9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		ED4F94212927CFCE007AEFF2 /* Release */ = {
+		ED132F5229DDC3D50025A9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		ED4F94232927CFCE007AEFF2 /* Debug */ = {
+		ED132F5429DDC3D50025A9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,19 +289,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3UPK989FF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MySwiftBookApp/Info.plist;
+				INFOPLIST_FILE = GCD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IOS.Victor.MySwiftBookApp;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.Victor.GCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -312,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		ED4F94242927CFCE007AEFF2 /* Release */ = {
+		ED132F5529DDC3D50025A9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -321,19 +321,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A3UPK989FF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MySwiftBookApp/Info.plist;
+				INFOPLIST_FILE = GCD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = IOS.Victor.MySwiftBookApp;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.Victor.GCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -347,25 +347,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED4F94092927CFCD007AEFF2 /* Build configuration list for PBXProject "MySwiftBookApp" */ = {
+		ED132F3A29DDC3D30025A9F0 /* Build configuration list for PBXProject "GCD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED4F94202927CFCE007AEFF2 /* Debug */,
-				ED4F94212927CFCE007AEFF2 /* Release */,
+				ED132F5129DDC3D50025A9F0 /* Debug */,
+				ED132F5229DDC3D50025A9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED4F94222927CFCE007AEFF2 /* Build configuration list for PBXNativeTarget "MySwiftBookApp" */ = {
+		ED132F5329DDC3D50025A9F0 /* Build configuration list for PBXNativeTarget "GCD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED4F94232927CFCE007AEFF2 /* Debug */,
-				ED4F94242927CFCE007AEFF2 /* Release */,
+				ED132F5429DDC3D50025A9F0 /* Debug */,
+				ED132F5529DDC3D50025A9F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ED4F94062927CFCD007AEFF2 /* Project object */;
+	rootObject = ED132F3729DDC3D30025A9F0 /* Project object */;
 }
