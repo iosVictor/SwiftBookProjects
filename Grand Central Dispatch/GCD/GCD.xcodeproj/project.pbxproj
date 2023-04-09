@@ -26,6 +26,11 @@
 		ED132F4E29DDC3D50025A9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED132F5029DDC3D50025A9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED132F5629DDD1660025A9F0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		ED132F5929DE05BC0025A9F0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ED132F5A29E2BC290025A9F0 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ED132F5B29E2C7860025A9F0 /* Bloks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bloks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ED132F5C29E2CDE60025A9F0 /* Semaphores.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Semaphores.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ED132F5D29E2D23C0025A9F0 /* Sources.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sources.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,11 @@
 				ED132F4B29DDC3D50025A9F0 /* Assets.xcassets */,
 				ED132F4D29DDC3D50025A9F0 /* LaunchScreen.storyboard */,
 				ED132F5029DDC3D50025A9F0 /* Info.plist */,
+				ED132F5D29E2D23C0025A9F0 /* Sources.playground */,
+				ED132F5C29E2CDE60025A9F0 /* Semaphores.playground */,
+				ED132F5B29E2C7860025A9F0 /* Bloks.playground */,
+				ED132F5A29E2BC290025A9F0 /* Playground.playground */,
+				ED132F5929DE05BC0025A9F0 /* MyPlayground.playground */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
