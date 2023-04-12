@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  ToDoFIRE
 //
-//  Created by Victor Kimpel on 9.04.23.
+//  Created by Victor Kimpel on 12.04.23.
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
         return true
     }
 
