@@ -20,6 +20,8 @@
 		ED132FB329E74A350025A9F0 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED132FB229E74A350025A9F0 /* FirebaseDatabaseSwift */; };
 		ED132FB529E74A350025A9F0 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED132FB429E74A350025A9F0 /* FirebaseFirestoreSwift */; };
 		ED132FB729E74A350025A9F0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ED132FB629E74A350025A9F0 /* FirebaseStorage */; };
+		ED132FB929E840BF0025A9F0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED132FB829E840BF0025A9F0 /* Task.swift */; };
+		ED132FBB29E840D10025A9F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED132FBA29E840D10025A9F0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		ED132FA329E723D00025A9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED132FA929E724A20025A9F0 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		ED132FAB29E7283E0025A9F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED132FB829E840BF0025A9F0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		ED132FBA29E840D10025A9F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +74,10 @@
 		ED132F9429E723CF0025A9F0 /* ToDoFIRE */ = {
 			isa = PBXGroup;
 			children = (
+				ED132FBD29E8411A0025A9F0 /* Controllers */,
+				ED132FBC29E840E50025A9F0 /* Models */,
 				ED132F9529E723CF0025A9F0 /* AppDelegate.swift */,
 				ED132F9729E723CF0025A9F0 /* SceneDelegate.swift */,
-				ED132F9929E723CF0025A9F0 /* LoginViewController.swift */,
-				ED132FA929E724A20025A9F0 /* TasksViewController.swift */,
 				ED132F9B29E723CF0025A9F0 /* Main.storyboard */,
 				ED132F9E29E723D00025A9F0 /* Assets.xcassets */,
 				ED132FA029E723D00025A9F0 /* LaunchScreen.storyboard */,
@@ -81,6 +85,24 @@
 				ED132FAB29E7283E0025A9F0 /* GoogleService-Info.plist */,
 			);
 			path = ToDoFIRE;
+			sourceTree = "<group>";
+		};
+		ED132FBC29E840E50025A9F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED132FB829E840BF0025A9F0 /* Task.swift */,
+				ED132FBA29E840D10025A9F0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED132FBD29E8411A0025A9F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED132F9929E723CF0025A9F0 /* LoginViewController.swift */,
+				ED132FA929E724A20025A9F0 /* TasksViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +189,8 @@
 			files = (
 				ED132F9A29E723CF0025A9F0 /* LoginViewController.swift in Sources */,
 				ED132FAA29E724A20025A9F0 /* TasksViewController.swift in Sources */,
+				ED132FBB29E840D10025A9F0 /* User.swift in Sources */,
+				ED132FB929E840BF0025A9F0 /* Task.swift in Sources */,
 				ED132F9629E723CF0025A9F0 /* AppDelegate.swift in Sources */,
 				ED132F9829E723CF0025A9F0 /* SceneDelegate.swift in Sources */,
 			);

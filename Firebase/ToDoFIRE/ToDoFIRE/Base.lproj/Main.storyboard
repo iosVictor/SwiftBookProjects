@@ -51,6 +51,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="3tI-1f-7Jm">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="klJ-f8-RXC">
+                            <connections>
+                                <action selector="signOutTapped:" destination="5Cc-fP-KY5" id="Rnv-gu-0wM"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="J4m-5m-tvT">
                             <connections>
                                 <action selector="addTapped:" destination="5Cc-fP-KY5" id="6XZ-Ws-3rk"/>
@@ -149,7 +154,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="J6u-SB-E03" eventType="touchUpInside" id="5WK-EA-6Dj"/>
-                                                    <segue destination="gZc-UU-tqi" kind="show" identifier="tasksSegue" id="pyJ-cb-mFW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nH-iH-ds8">
@@ -193,6 +197,7 @@
                         <outlet property="emailTextField" destination="fqn-gC-eoD" id="4gZ-Cs-roY"/>
                         <outlet property="passwordTextField" destination="5Yf-bp-v7N" id="qlP-Cx-P6f"/>
                         <outlet property="warnLabel" destination="dCh-km-BkS" id="Hdf-2e-8yH"/>
+                        <segue destination="gZc-UU-tqi" kind="show" identifier="tasksSegue" id="95A-82-dTE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bba-8X-g55" sceneMemberID="firstResponder"/>
