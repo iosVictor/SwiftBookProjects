@@ -15,6 +15,7 @@
 		ED6AE33529F0776300904683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6AE33329F0776300904683 /* LaunchScreen.storyboard */; };
 		ED6AE33C29F3230700904683 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AE33B29F3230700904683 /* Background.swift */; };
 		ED6AE33E29F5C64500904683 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AE33D29F5C64500904683 /* Island.swift */; };
+		ED6AE34029F867FA00904683 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AE33F29F867FA00904683 /* Cloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		ED6AE33429F0776300904683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED6AE33B29F3230700904683 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		ED6AE33D29F5C64500904683 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		ED6AE33F29F867FA00904683 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				ED6AE32429F0776100904683 /* AppDelegate.swift */,
 				ED6AE32A29F0776100904683 /* GameScene.swift */,
 				ED6AE33D29F5C64500904683 /* Island.swift */,
+				ED6AE33F29F867FA00904683 /* Cloud.swift */,
 				ED6AE33B29F3230700904683 /* Background.swift */,
 				ED6AE32C29F0776100904683 /* GameViewController.swift */,
 				ED6AE32E29F0776100904683 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED6AE32B29F0776100904683 /* GameScene.swift in Sources */,
+				ED6AE34029F867FA00904683 /* Cloud.swift in Sources */,
 				ED6AE32D29F0776100904683 /* GameViewController.swift in Sources */,
 				ED6AE32529F0776100904683 /* AppDelegate.swift in Sources */,
 				ED6AE33E29F5C64500904683 /* Island.swift in Sources */,
