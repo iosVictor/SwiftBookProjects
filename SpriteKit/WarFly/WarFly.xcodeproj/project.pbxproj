@@ -18,6 +18,7 @@
 		ED6AE34029F867FA00904683 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AE33F29F867FA00904683 /* Cloud.swift */; };
 		ED6AE34229F9B54600904683 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AE34129F9B54600904683 /* PlayerPlane.swift */; };
 		ED6AE34429F9B6AE00904683 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = ED6AE34329F9B6AE00904683 /* PlayerPlane.atlas */; };
+		ED6AE34629FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AE34529FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		ED6AE33F29F867FA00904683 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		ED6AE34129F9B54600904683 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		ED6AE34329F9B6AE00904683 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		ED6AE34529FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				ED6AE34129F9B54600904683 /* PlayerPlane.swift */,
 				ED6AE33D29F5C64500904683 /* Island.swift */,
 				ED6AE33F29F867FA00904683 /* Cloud.swift */,
+				ED6AE34529FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift */,
 				ED6AE33B29F3230700904683 /* Background.swift */,
 				ED6AE32C29F0776100904683 /* GameViewController.swift */,
 				ED6AE32E29F0776100904683 /* Main.storyboard */,
@@ -157,6 +160,7 @@
 				ED6AE34029F867FA00904683 /* Cloud.swift in Sources */,
 				ED6AE32D29F0776100904683 /* GameViewController.swift in Sources */,
 				ED6AE32529F0776100904683 /* AppDelegate.swift in Sources */,
+				ED6AE34629FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
 				ED6AE33E29F5C64500904683 /* Island.swift in Sources */,
 				ED6AE33C29F3230700904683 /* Background.swift in Sources */,
 			);
@@ -310,6 +314,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -342,6 +347,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
