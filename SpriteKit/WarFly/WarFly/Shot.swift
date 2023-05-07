@@ -1,14 +1,16 @@
 //
-//  PowerUp.swift
+//  Shot.swift
 //  WarFly
 //
-//  Created by Victor Kimpel on 5.05.23.
+//  Created by Victor Kimpel on 7.05.23.
 //
 
 import SpriteKit
 
-class PowerUp: SKSpriteNode {
-    fileprivate let initialSize = CGSize(width: 52, height: 52)
+class Shot: SKSpriteNode {
+    let screenSize = UIScreen.main.bounds
+    
+    fileprivate let initialSize = CGSize(width: 187, height: 237)
     fileprivate let textureAtlas: SKTextureAtlas!
     fileprivate var textureNameBeginsWith = ""
     fileprivate var animationSpriteArray = [SKTexture]()
@@ -19,20 +21,20 @@ class PowerUp: SKSpriteNode {
         let texture = textureAtlas.textureNamed(textureName)
         textureNameBeginsWith = String(textureName.dropLast(6))
         super.init(texture: texture, color: .clear, size: initialSize)
-        self.setScale(0.7)
-        self.name = "sprite"
-        self.zPosition = 20
+        self.setScale(0.3)
+        self.name = "shotSprite"
+        self.zPosition = 30
     }
     
     func startMovement() {
         performRotation()
         
-        let moveForward = SKAction.moveTo(y: -100, duration: 5)
+        let moveForward = SKAction.moveTo(y: screenSize.height + 100, duration: 2)
         self.run(moveForward)
     }
     
     fileprivate func performRotation() {
-        for i in 1...15 {
+        for i in 1...32 {
             let number = String(format: "%02d", i)
             animationSpriteArray.append(SKTexture(imageNamed: textureNameBeginsWith + number.description))
         }

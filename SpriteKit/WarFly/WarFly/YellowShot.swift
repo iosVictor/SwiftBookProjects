@@ -1,5 +1,5 @@
 //
-//  GreenPowerUp.swift
+//  YellowShot.swift
 //  WarFly
 //
 //  Created by Victor Kimpel on 7.05.23.
@@ -7,10 +7,10 @@
 
 import SpriteKit
 
-class GreenPowerUp: PowerUp {
+class YellowShot: Shot {
     
     init() {
-        let textureAtlas = Assets.shared.greenPowerUpAtlas
+        let textureAtlas = Assets.shared.yellowShotAtlas
         super.init(textureAtlas: textureAtlas)
     }
     
