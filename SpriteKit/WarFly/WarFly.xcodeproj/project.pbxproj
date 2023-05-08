@@ -31,6 +31,7 @@
 		EDBD4D9E2A08304A006DCF60 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4D9D2A08304A006DCF60 /* Shot.swift */; };
 		EDBD4DA02A083326006DCF60 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4D9F2A083326006DCF60 /* YellowShot.swift */; };
 		EDBD4DA22A08365B006DCF60 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA12A08365B006DCF60 /* Assets.swift */; };
+		EDBD4DA42A098825006DCF60 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA32A098825006DCF60 /* MenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		EDBD4D9D2A08304A006DCF60 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		EDBD4D9F2A083326006DCF60 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		EDBD4DA12A08365B006DCF60 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EDBD4DA32A098825006DCF60 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				ED6AE32429F0776100904683 /* AppDelegate.swift */,
+				EDBD4DA32A098825006DCF60 /* MenuScene.swift */,
 				ED6AE32A29F0776100904683 /* GameScene.swift */,
 				EDBD4DA12A08365B006DCF60 /* Assets.swift */,
 				ED6AE34B2A06461C00904683 /* Enemy.swift */,
@@ -217,6 +220,7 @@
 				ED6AE3562A07B35800904683 /* GreenPowerUp.swift in Sources */,
 				ED6AE33E29F5C64500904683 /* Island.swift in Sources */,
 				ED6AE3482A05273500904683 /* PowerUp.swift in Sources */,
+				EDBD4DA42A098825006DCF60 /* MenuScene.swift in Sources */,
 				EDBD4D9E2A08304A006DCF60 /* Shot.swift in Sources */,
 				ED6AE33C29F3230700904683 /* Background.swift in Sources */,
 			);
