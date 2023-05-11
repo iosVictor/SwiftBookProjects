@@ -27,6 +27,13 @@ class PlayerPlane: SKSpriteNode {
         playerPlane.setScale(0.5)
         playerPlane.position = point
         playerPlane.zPosition = 40
+        
+        playerPlane.physicsBody = SKPhysicsBody(texture: playerPlaneTexture, alphaThreshold: 0.5, size: playerPlane.size)
+        playerPlane.physicsBody?.isDynamic = false
+        playerPlane.physicsBody?.categoryBitMask = BitMaskCategory.player.rawValue
+        playerPlane.physicsBody?.collisionBitMask = BitMaskCategory.enemy.rawValue | BitMaskCategory.powerUp.rawValue
+        playerPlane.physicsBody?.contactTestBitMask = BitMaskCategory.enemy.rawValue | BitMaskCategory.powerUp.rawValue
+        
         return playerPlane
     }
     

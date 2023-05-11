@@ -13,6 +13,10 @@ class GameScene: SKScene {
     var player: PlayerPlane!
  
     override func didMove(to view: SKView) {
+        
+        physicsWorld.contactDelegate = self
+        physicsWorld.gravity = CGVector.zero
+        
         configureStartScene()
         spawnClouds()
         spawnIslands()
@@ -146,4 +150,22 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         playerFire()
     }
+}
+
+extension GameScene: SKPhysicsContactDelegate {
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        
+        let contactCategory: BitMaskCategory = [contact.bodyA.category, contact.bodyB.category]
+        switch contactCategory {
+        case [.enemy, .player]: print("enemy vs player")
+        case [.powerUp, .player]: print("powerUp vs player")
+        case [.enemy, .shot]: print("enemy vs shot")
+        default: preconditionFailure("Unable to detect collision category")
+        }
+    }
+    
+//    func didEnd(_ contact: SKPhysicsContact) {
+//        <#code#>
+//    }
 }
