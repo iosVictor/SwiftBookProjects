@@ -36,6 +36,7 @@
 		EDBD4DA82A13BB0C006DCF60 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA72A13BB0C006DCF60 /* HUD.swift */; };
 		EDBD4DB02A13C9E1006DCF60 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */; };
 		EDBD4DB22A13D171006DCF60 /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB12A13D171006DCF60 /* PauseScene.swift */; };
+		EDBD4DB42A1413D6006DCF60 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB32A1413D6006DCF60 /* SceneManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		EDBD4DA72A13BB0C006DCF60 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		EDBD4DB12A13D171006DCF60 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
+		EDBD4DB32A1413D6006DCF60 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				EDBD4DA12A08365B006DCF60 /* Assets.swift */,
 				EDBD4DA52A0D603F006DCF60 /* BitMaskCategory.swift */,
+				EDBD4DB32A1413D6006DCF60 /* SceneManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				ED6AE34629FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
 				EDBD4DA22A08365B006DCF60 /* Assets.swift in Sources */,
 				ED6AE34C2A06461C00904683 /* Enemy.swift in Sources */,
+				EDBD4DB42A1413D6006DCF60 /* SceneManager.swift in Sources */,
 				ED6AE3562A07B35800904683 /* GreenPowerUp.swift in Sources */,
 				ED6AE33E29F5C64500904683 /* Island.swift in Sources */,
 				ED6AE3482A05273500904683 /* PowerUp.swift in Sources */,
