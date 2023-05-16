@@ -33,6 +33,9 @@
 		EDBD4DA22A08365B006DCF60 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA12A08365B006DCF60 /* Assets.swift */; };
 		EDBD4DA42A098825006DCF60 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA32A098825006DCF60 /* MenuScene.swift */; };
 		EDBD4DA62A0D603F006DCF60 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA52A0D603F006DCF60 /* BitMaskCategory.swift */; };
+		EDBD4DA82A13BB0C006DCF60 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DA72A13BB0C006DCF60 /* HUD.swift */; };
+		EDBD4DB02A13C9E1006DCF60 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */; };
+		EDBD4DB22A13D171006DCF60 /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB12A13D171006DCF60 /* PauseScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		EDBD4DA12A08365B006DCF60 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		EDBD4DA32A098825006DCF60 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		EDBD4DA52A0D603F006DCF60 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
+		EDBD4DA72A13BB0C006DCF60 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		EDBD4DB12A13D171006DCF60 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,26 +101,12 @@
 		ED6AE32329F0776100904683 /* WarFly */ = {
 			isa = PBXGroup;
 			children = (
-				ED6AE32429F0776100904683 /* AppDelegate.swift */,
-				EDBD4DA32A098825006DCF60 /* MenuScene.swift */,
-				ED6AE32A29F0776100904683 /* GameScene.swift */,
-				EDBD4DA12A08365B006DCF60 /* Assets.swift */,
-				EDBD4DA52A0D603F006DCF60 /* BitMaskCategory.swift */,
-				ED6AE34129F9B54600904683 /* PlayerPlane.swift */,
-				ED6AE34B2A06461C00904683 /* Enemy.swift */,
-				ED6AE33D29F5C64500904683 /* Island.swift */,
-				ED6AE33F29F867FA00904683 /* Cloud.swift */,
-				EDBD4D9D2A08304A006DCF60 /* Shot.swift */,
-				EDBD4D9F2A083326006DCF60 /* YellowShot.swift */,
-				ED6AE3472A05273500904683 /* PowerUp.swift */,
-				ED6AE3532A07B34A00904683 /* BluePowerUp.swift */,
-				ED6AE3552A07B35800904683 /* GreenPowerUp.swift */,
-				ED6AE34529FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift */,
-				ED6AE33B29F3230700904683 /* Background.swift */,
-				ED6AE32C29F0776100904683 /* GameViewController.swift */,
-				ED6AE32E29F0776100904683 /* Main.storyboard */,
-				ED6AE33129F0776300904683 /* Assets.xcassets */,
-				ED6AE33329F0776300904683 /* LaunchScreen.storyboard */,
+				EDBD4DAE2A13C161006DCF60 /* Scenes */,
+				EDBD4DAD2A13C137006DCF60 /* Managers */,
+				EDBD4DAC2A13C0A5006DCF60 /* Classes */,
+				EDBD4DAB2A13BFF5006DCF60 /* Protocols + Extensions */,
+				EDBD4DAA2A13BF0F006DCF60 /* Controllers */,
+				EDBD4DA92A13BED5006DCF60 /* Supporting files */,
 				EDBD4D9C2A08300B006DCF60 /* Atlases */,
 			);
 			path = WarFly;
@@ -131,6 +123,71 @@
 				ED6AE34329F9B6AE00904683 /* PlayerPlane.atlas */,
 			);
 			path = Atlases;
+			sourceTree = "<group>";
+		};
+		EDBD4DA92A13BED5006DCF60 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AE32429F0776100904683 /* AppDelegate.swift */,
+				ED6AE32E29F0776100904683 /* Main.storyboard */,
+				ED6AE33129F0776300904683 /* Assets.xcassets */,
+				ED6AE33329F0776300904683 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		EDBD4DAA2A13BF0F006DCF60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AE32C29F0776100904683 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDBD4DAB2A13BFF5006DCF60 /* Protocols + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED6AE34529FAD30C00904683 /* protocol GameBackgroundSpriteable + Extension.swift */,
+			);
+			path = "Protocols + Extensions";
+			sourceTree = "<group>";
+		};
+		EDBD4DAC2A13C0A5006DCF60 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */,
+				EDBD4DA72A13BB0C006DCF60 /* HUD.swift */,
+				ED6AE34129F9B54600904683 /* PlayerPlane.swift */,
+				ED6AE34B2A06461C00904683 /* Enemy.swift */,
+				ED6AE33D29F5C64500904683 /* Island.swift */,
+				ED6AE33F29F867FA00904683 /* Cloud.swift */,
+				EDBD4D9D2A08304A006DCF60 /* Shot.swift */,
+				EDBD4D9F2A083326006DCF60 /* YellowShot.swift */,
+				ED6AE3472A05273500904683 /* PowerUp.swift */,
+				ED6AE3532A07B34A00904683 /* BluePowerUp.swift */,
+				ED6AE3552A07B35800904683 /* GreenPowerUp.swift */,
+				ED6AE33B29F3230700904683 /* Background.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EDBD4DAD2A13C137006DCF60 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EDBD4DA12A08365B006DCF60 /* Assets.swift */,
+				EDBD4DA52A0D603F006DCF60 /* BitMaskCategory.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EDBD4DAE2A13C161006DCF60 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EDBD4DA32A098825006DCF60 /* MenuScene.swift */,
+				EDBD4DB12A13D171006DCF60 /* PauseScene.swift */,
+				ED6AE32A29F0776100904683 /* GameScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +282,11 @@
 				ED6AE3482A05273500904683 /* PowerUp.swift in Sources */,
 				EDBD4DA62A0D603F006DCF60 /* BitMaskCategory.swift in Sources */,
 				EDBD4DA42A098825006DCF60 /* MenuScene.swift in Sources */,
+				EDBD4DB22A13D171006DCF60 /* PauseScene.swift in Sources */,
+				EDBD4DA82A13BB0C006DCF60 /* HUD.swift in Sources */,
 				EDBD4D9E2A08304A006DCF60 /* Shot.swift in Sources */,
 				ED6AE33C29F3230700904683 /* Background.swift in Sources */,
+				EDBD4DB02A13C9E1006DCF60 /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
