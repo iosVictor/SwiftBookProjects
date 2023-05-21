@@ -37,6 +37,8 @@
 		EDBD4DB02A13C9E1006DCF60 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */; };
 		EDBD4DB22A13D171006DCF60 /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB12A13D171006DCF60 /* PauseScene.swift */; };
 		EDBD4DB42A1413D6006DCF60 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB32A1413D6006DCF60 /* SceneManager.swift */; };
+		EDBD4DB62A1A61D9006DCF60 /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB52A1A61D9006DCF60 /* ParentScene.swift */; };
+		EDBD4DB82A1A6645006DCF60 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD4DB72A1A6645006DCF60 /* OptionsScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		EDBD4DAF2A13C9E1006DCF60 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		EDBD4DB12A13D171006DCF60 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
 		EDBD4DB32A1413D6006DCF60 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		EDBD4DB52A1A61D9006DCF60 /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
+		EDBD4DB72A1A6645006DCF60 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +192,9 @@
 			children = (
 				EDBD4DA32A098825006DCF60 /* MenuScene.swift */,
 				EDBD4DB12A13D171006DCF60 /* PauseScene.swift */,
+				EDBD4DB72A1A6645006DCF60 /* OptionsScene.swift */,
 				ED6AE32A29F0776100904683 /* GameScene.swift */,
+				EDBD4DB52A1A61D9006DCF60 /* ParentScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -286,11 +292,13 @@
 				ED6AE3482A05273500904683 /* PowerUp.swift in Sources */,
 				EDBD4DA62A0D603F006DCF60 /* BitMaskCategory.swift in Sources */,
 				EDBD4DA42A098825006DCF60 /* MenuScene.swift in Sources */,
+				EDBD4DB62A1A61D9006DCF60 /* ParentScene.swift in Sources */,
 				EDBD4DB22A13D171006DCF60 /* PauseScene.swift in Sources */,
 				EDBD4DA82A13BB0C006DCF60 /* HUD.swift in Sources */,
 				EDBD4D9E2A08304A006DCF60 /* Shot.swift in Sources */,
 				ED6AE33C29F3230700904683 /* Background.swift in Sources */,
 				EDBD4DB02A13C9E1006DCF60 /* ButtonNode.swift in Sources */,
+				EDBD4DB82A1A6645006DCF60 /* OptionsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
