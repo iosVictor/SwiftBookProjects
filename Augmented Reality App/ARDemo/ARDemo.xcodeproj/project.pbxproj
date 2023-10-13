@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED23B1282AD9617A0094B316 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1272AD9617A0094B316 /* head.jpg */; };
+		ED23B12A2AD9632F0094B316 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1292AD9632F0094B316 /* earth.jpg */; };
 		ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */; };
 		ED8A60D02AD5879200B04B8A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8A60CF2AD5879200B04B8A /* art.scnassets */; };
 		ED8A60D22AD5879200B04B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60D12AD5879200B04B8A /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED23B1272AD9617A0094B316 /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
+		ED23B1292AD9632F0094B316 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		ED8A60CA2AD5879200B04B8A /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8A60CF2AD5879200B04B8A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */,
+				ED23B1272AD9617A0094B316 /* head.jpg */,
+				ED23B1292AD9632F0094B316 /* earth.jpg */,
 				ED8A60CF2AD5879200B04B8A /* art.scnassets */,
 				ED8A60D12AD5879200B04B8A /* ViewController.swift */,
 				ED8A60D32AD5879200B04B8A /* Main.storyboard */,
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8A60D02AD5879200B04B8A /* art.scnassets in Resources */,
+				ED23B1282AD9617A0094B316 /* head.jpg in Resources */,
+				ED23B12A2AD9632F0094B316 /* earth.jpg in Resources */,
 				ED8A60DA2AD5879300B04B8A /* LaunchScreen.storyboard in Resources */,
 				ED8A60D72AD5879300B04B8A /* Assets.xcassets in Resources */,
 				ED8A60D52AD5879200B04B8A /* Main.storyboard in Resources */,
