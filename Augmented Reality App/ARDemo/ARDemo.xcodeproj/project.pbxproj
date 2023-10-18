@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2108322AE06B74008FDA61 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2108312AE06B74008FDA61 /* Plane.swift */; };
+		ED2108342AE06D1D008FDA61 /* pinkWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2108332AE06D1D008FDA61 /* pinkWeb.png */; };
 		ED23B1282AD9617A0094B316 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1272AD9617A0094B316 /* head.jpg */; };
 		ED23B12A2AD9632F0094B316 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1292AD9632F0094B316 /* earth.jpg */; };
 		ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED2108312AE06B74008FDA61 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		ED2108332AE06D1D008FDA61 /* pinkWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkWeb.png; sourceTree = "<group>"; };
 		ED23B1272AD9617A0094B316 /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
 		ED23B1292AD9632F0094B316 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		ED8A60CA2AD5879200B04B8A /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +68,9 @@
 				ED23B1292AD9632F0094B316 /* earth.jpg */,
 				ED8A60CF2AD5879200B04B8A /* art.scnassets */,
 				ED8A60D12AD5879200B04B8A /* ViewController.swift */,
+				ED2108312AE06B74008FDA61 /* Plane.swift */,
 				ED8A60D32AD5879200B04B8A /* Main.storyboard */,
+				ED2108332AE06D1D008FDA61 /* pinkWeb.png */,
 				ED8A60D62AD5879300B04B8A /* Assets.xcassets */,
 				ED8A60D82AD5879300B04B8A /* LaunchScreen.storyboard */,
 			);
@@ -131,6 +137,7 @@
 			files = (
 				ED8A60D02AD5879200B04B8A /* art.scnassets in Resources */,
 				ED23B1282AD9617A0094B316 /* head.jpg in Resources */,
+				ED2108342AE06D1D008FDA61 /* pinkWeb.png in Resources */,
 				ED23B12A2AD9632F0094B316 /* earth.jpg in Resources */,
 				ED8A60DA2AD5879300B04B8A /* LaunchScreen.storyboard in Resources */,
 				ED8A60D72AD5879300B04B8A /* Assets.xcassets in Resources */,
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8A60D22AD5879200B04B8A /* ViewController.swift in Sources */,
+				ED2108322AE06B74008FDA61 /* Plane.swift in Sources */,
 				ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
