@@ -11,6 +11,7 @@
 		ED2108342AE06D1D008FDA61 /* pinkWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2108332AE06D1D008FDA61 /* pinkWeb.png */; };
 		ED23B1282AD9617A0094B316 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1272AD9617A0094B316 /* head.jpg */; };
 		ED23B12A2AD9632F0094B316 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1292AD9632F0094B316 /* earth.jpg */; };
+		ED41523E2AE30E2F00450EA7 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41523D2AE30E2F00450EA7 /* Box.swift */; };
 		ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */; };
 		ED8A60D02AD5879200B04B8A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8A60CF2AD5879200B04B8A /* art.scnassets */; };
 		ED8A60D22AD5879200B04B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60D12AD5879200B04B8A /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		ED2108332AE06D1D008FDA61 /* pinkWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkWeb.png; sourceTree = "<group>"; };
 		ED23B1272AD9617A0094B316 /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
 		ED23B1292AD9632F0094B316 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		ED41523D2AE30E2F00450EA7 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		ED8A60CA2AD5879200B04B8A /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8A60CF2AD5879200B04B8A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				ED23B1292AD9632F0094B316 /* earth.jpg */,
 				ED8A60CF2AD5879200B04B8A /* art.scnassets */,
 				ED8A60D12AD5879200B04B8A /* ViewController.swift */,
+				ED41523D2AE30E2F00450EA7 /* Box.swift */,
 				ED2108312AE06B74008FDA61 /* Plane.swift */,
 				ED8A60D32AD5879200B04B8A /* Main.storyboard */,
 				ED2108332AE06D1D008FDA61 /* pinkWeb.png */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8A60D22AD5879200B04B8A /* ViewController.swift in Sources */,
+				ED41523E2AE30E2F00450EA7 /* Box.swift in Sources */,
 				ED2108322AE06B74008FDA61 /* Plane.swift in Sources */,
 				ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */,
 			);
