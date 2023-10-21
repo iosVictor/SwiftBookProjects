@@ -12,6 +12,7 @@
 		ED23B1282AD9617A0094B316 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1272AD9617A0094B316 /* head.jpg */; };
 		ED23B12A2AD9632F0094B316 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED23B1292AD9632F0094B316 /* earth.jpg */; };
 		ED41523E2AE30E2F00450EA7 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41523D2AE30E2F00450EA7 /* Box.swift */; };
+		ED4152402AE45D0C00450EA7 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41523F2AE45D0C00450EA7 /* BitMaskCategory.swift */; };
 		ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */; };
 		ED8A60D02AD5879200B04B8A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8A60CF2AD5879200B04B8A /* art.scnassets */; };
 		ED8A60D22AD5879200B04B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A60D12AD5879200B04B8A /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		ED23B1272AD9617A0094B316 /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
 		ED23B1292AD9632F0094B316 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		ED41523D2AE30E2F00450EA7 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		ED41523F2AE45D0C00450EA7 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 		ED8A60CA2AD5879200B04B8A /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8A60CD2AD5879200B04B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8A60CF2AD5879200B04B8A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				ED23B1292AD9632F0094B316 /* earth.jpg */,
 				ED8A60CF2AD5879200B04B8A /* art.scnassets */,
 				ED8A60D12AD5879200B04B8A /* ViewController.swift */,
+				ED41523F2AE45D0C00450EA7 /* BitMaskCategory.swift */,
 				ED41523D2AE30E2F00450EA7 /* Box.swift */,
 				ED2108312AE06B74008FDA61 /* Plane.swift */,
 				ED8A60D32AD5879200B04B8A /* Main.storyboard */,
@@ -108,7 +111,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					ED8A60C92AD5879200B04B8A = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -157,6 +160,7 @@
 			files = (
 				ED8A60D22AD5879200B04B8A /* ViewController.swift in Sources */,
 				ED41523E2AE30E2F00450EA7 /* Box.swift in Sources */,
+				ED4152402AE45D0C00450EA7 /* BitMaskCategory.swift in Sources */,
 				ED2108322AE06B74008FDA61 /* Plane.swift in Sources */,
 				ED8A60CE2AD5879200B04B8A /* AppDelegate.swift in Sources */,
 			);
@@ -220,6 +224,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -280,6 +285,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
