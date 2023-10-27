@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
-//        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+//        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
         sceneView.autoenablesDefaultLighting = true
         
@@ -32,8 +32,6 @@ class ViewController: UIViewController {
         
         // Set the scene to the view
         sceneView.scene = scene
-        
-        sceneView.scene.physicsWorld.contactDelegate = self
         
         setupGestures()
     }
@@ -67,6 +65,11 @@ class ViewController: UIViewController {
         virtualObject.load()
         virtualObject.position = position
         
+        if let particleSystem = SCNParticleSystem(named: "Smoke.scnp", inDirectory: nil), let smokeNode = virtualObject.childNode(withName: "SmokeNode", recursively: true) {
+            
+            smokeNode.addParticleSystem(particleSystem)
+        }
+        
         sceneView.scene.rootNode.addChildNode(virtualObject)
     }
     
@@ -99,6 +102,7 @@ extension ViewController: ARSCNViewDelegate {
         guard anchor is ARPlaneAnchor else { return }
         
         let plane = Plane(anchor: anchor as! ARPlaneAnchor)
+        print("Plane is detected and created------->")
         
         self.planes.append(plane)
         node.addChildNode(plane)
@@ -116,17 +120,3 @@ extension ViewController: ARSCNViewDelegate {
     }
 }
 
-extension ViewController: SCNPhysicsContactDelegate {
-    
-    func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
-        
-        let nodeA = contact.nodeA
-        let nodeB = contact.nodeB
-        
-        if nodeB.physicsBody?.contactTestBitMask == BitMaskCategory.box {
-            nodeA.geometry?.materials.first?.diffuse.contents = UIColor.red
-            return
-        }
-        nodeB.geometry?.materials.first?.diffuse.contents = UIColor.red
-    }
-}
