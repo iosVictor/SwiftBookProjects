@@ -15,6 +15,8 @@
 		ED41528C2AEE636B00450EA7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41528B2AEE636B00450EA7 /* TableViewController.swift */; };
 		ED41528E2AEE63E000450EA7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41528D2AEE63E000450EA7 /* Profile.swift */; };
 		ED4152902AEE677F00450EA7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41528F2AEE677F00450EA7 /* TableViewCell.swift */; };
+		EDCDEE712AF2D0A50054A793 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCDEE702AF2D0A50054A793 /* ViewModel.swift */; };
+		EDCDEE732AF2D1AC0054A793 /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCDEE722AF2D1AC0054A793 /* TableViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		ED41528B2AEE636B00450EA7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		ED41528D2AEE63E000450EA7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = ../Profile.swift; sourceTree = "<group>"; };
 		ED41528F2AEE677F00450EA7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+		EDCDEE702AF2D0A50054A793 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EDCDEE722AF2D1AC0054A793 /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,8 @@
 			children = (
 				ED4152772AEE62BF00450EA7 /* AppDelegate.swift */,
 				ED4152792AEE62BF00450EA7 /* SceneDelegate.swift */,
-				ED41528B2AEE636B00450EA7 /* TableViewController.swift */,
+				EDCDEE742AF2D2510054A793 /* ViewModel */,
+				EDCDEE752AF2D2750054A793 /* Protocols */,
 				ED4152942AEE69FD00450EA7 /* Model */,
 				ED4152952AEE6A5E00450EA7 /* View */,
 				ED41527D2AEE62BF00450EA7 /* Main.storyboard */,
@@ -84,9 +89,26 @@
 		ED4152952AEE6A5E00450EA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED41528B2AEE636B00450EA7 /* TableViewController.swift */,
 				ED41528F2AEE677F00450EA7 /* TableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EDCDEE742AF2D2510054A793 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDCDEE702AF2D0A50054A793 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDCDEE752AF2D2750054A793 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EDCDEE722AF2D1AC0054A793 /* TableViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +186,8 @@
 				ED4152782AEE62BF00450EA7 /* AppDelegate.swift in Sources */,
 				ED41528E2AEE63E000450EA7 /* Profile.swift in Sources */,
 				ED41528C2AEE636B00450EA7 /* TableViewController.swift in Sources */,
+				EDCDEE732AF2D1AC0054A793 /* TableViewModelType.swift in Sources */,
+				EDCDEE712AF2D0A50054A793 /* ViewModel.swift in Sources */,
 				ED41527A2AEE62BF00450EA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
