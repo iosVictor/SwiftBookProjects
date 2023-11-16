@@ -19,6 +19,8 @@
 		EDBFF9C02B062F2E00381574 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBFF9BF2B062F2E00381574 /* NetworkDataFetcher.swift */; };
 		EDBFF9C42B063FEC00381574 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBFF9C32B063FEC00381574 /* AppGroup.swift */; };
 		EDBFF9C62B0665B300381574 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBFF9C52B0665B300381574 /* DataFetcherService.swift */; };
+		EDBFF9C82B06852200381574 /* LocalDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBFF9C72B06852200381574 /* LocalDataFetcher.swift */; };
+		EDBFF9CA2B06900C00381574 /* usersAPI.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDBFF9C92B06900C00381574 /* usersAPI.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EDBFF9BF2B062F2E00381574 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		EDBFF9C32B063FEC00381574 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		EDBFF9C52B0665B300381574 /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		EDBFF9C72B06852200381574 /* LocalDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataFetcher.swift; sourceTree = "<group>"; };
+		EDBFF9C92B06900C00381574 /* usersAPI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = usersAPI.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,10 @@
 				EDBFF9C22B06340000381574 /* Models */,
 				EDBFF9B92B015FFA00381574 /* NetworkService.swift */,
 				EDBFF9BF2B062F2E00381574 /* NetworkDataFetcher.swift */,
+				EDBFF9C72B06852200381574 /* LocalDataFetcher.swift */,
 				EDBFF9C52B0665B300381574 /* DataFetcherService.swift */,
 				EDBFF9BB2B01617A00381574 /* DataStore.swift */,
+				EDBFF9C92B06900C00381574 /* usersAPI.txt */,
 			);
 			path = Sevices;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			files = (
 				EDBFF9B22B014B7400381574 /* LaunchScreen.storyboard in Resources */,
 				EDBFF9AF2B014B7400381574 /* Assets.xcassets in Resources */,
+				EDBFF9CA2B06900C00381574 /* usersAPI.txt in Resources */,
 				EDBFF9AD2B014B7300381574 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +186,7 @@
 				EDBFF9BA2B015FFA00381574 /* NetworkService.swift in Sources */,
 				EDBFF9C62B0665B300381574 /* DataFetcherService.swift in Sources */,
 				EDBFF9BC2B01617A00381574 /* DataStore.swift in Sources */,
+				EDBFF9C82B06852200381574 /* LocalDataFetcher.swift in Sources */,
 				EDBFF9A82B014B7300381574 /* SceneDelegate.swift in Sources */,
 				EDBFF9C42B063FEC00381574 /* AppGroup.swift in Sources */,
 			);

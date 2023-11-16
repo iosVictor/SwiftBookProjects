@@ -9,24 +9,31 @@ import Foundation
 
 class DataFetcherService {
     
-    var dataFetcher: DataFetcher
+    var networkDataFetcher: DataFetcher
+    var localDataFetcher: DataFetcher
     
-    init(dataFetcher: DataFetcher = NetworkDataFetcher()) {
-        self.dataFetcher = dataFetcher
+    init(networkDataFetcher: DataFetcher = NetworkDataFetcher(), localDataFetcher: DataFetcher = LocalDataFetcher()) {
+        self.networkDataFetcher = networkDataFetcher
+        self.localDataFetcher = localDataFetcher
     }
     
     func fetchNewGames(completion: @escaping (AppGroup?) -> Void) {
         let urlNewGames = "https://rss.applemarketingtools.com/api/v2/us/apps/top-paid/10/apps.json"
-        dataFetcher.fetchGenericJSONData(urlString: urlNewGames, response: completion)
+        networkDataFetcher.fetchGenericJSONData(urlString: urlNewGames, response: completion)
     }
     
     func fetchFreeGames(completion: @escaping (AppGroup?) -> Void) {
         let urlFreeGames = "https://rss.applemarketingtools.com/api/v2/us/apps/top-free/10/apps.json"
-        dataFetcher.fetchGenericJSONData(urlString: urlFreeGames, response: completion)
+        networkDataFetcher.fetchGenericJSONData(urlString: urlFreeGames, response: completion)
     }
     
     func fetchCountry(completion: @escaping ([Country]?) -> Void) {
         let urlString = "https://raw.githubusercontent.com/Softex-Group/task-mobile/master/test.json"
-        dataFetcher.fetchGenericJSONData(urlString: urlString, response: completion)
+        networkDataFetcher.fetchGenericJSONData(urlString: urlString, response: completion)
+    }
+    
+    func fetchLocalCountry(completion: @escaping ([Country]?) -> Void) {
+        let localUrlString = "usersAPI.txt"
+        localDataFetcher.fetchGenericJSONData(urlString: localUrlString, response: completion)
     }
 }
