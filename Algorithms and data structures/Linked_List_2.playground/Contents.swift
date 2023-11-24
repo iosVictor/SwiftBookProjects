@@ -1,52 +1,88 @@
-class ListNode {
-    var value: Int
+class ListNode<T> {
+    var value: T
     var next: ListNode?
-    init(value: Int, next: ListNode?) {
+    var previous: ListNode?
+    init(value: T) {
         self.value = value
-        self.next = next
     }
 }
 
-func printList(head: ListNode?) {
-    var currentNode = head
-    while currentNode != nil {
-        print(currentNode?.value ?? "")
-        currentNode = currentNode?.next
+struct LinkedList<T>: CustomStringConvertible {
+    
+    private var head: ListNode<T>?
+    private var tail: ListNode<T>?
+    
+    var isEmpty: Bool {
+        return head == nil
     }
-}
-
-let forthNode = ListNode(value: 12, next: nil)
-let threeNode = ListNode(value: 9, next: forthNode)
-let twoNode = ListNode(value: 6, next: threeNode)
-let head = ListNode(value: 1, next: twoNode)
-
-let threeNode2 = ListNode(value: 8, next: nil)
-let twoNode2 = ListNode(value: 5, next: threeNode2)
-let head2 = ListNode(value: 2, next: twoNode2)
-
-func mergeTwoLists(list1: ListNode?, list2: ListNode?) -> ListNode? {
-    guard list1 != nil else { return list2}
-    guard list2 != nil else { return list1}
     
-    let dummyHead: ListNode = ListNode(value: 0, next: nil)
-    var l1 = list1, l2 = list2
-    var endOfSortedList: ListNode? = dummyHead
+    var first: ListNode<T>? {
+        return head
+    }
     
-    while l1 != nil && l2 != nil {
-        if l1!.value <= l2!.value {
-            endOfSortedList!.next = l1
-            l1 = l1!.next
+    var last: ListNode<T>? {
+        return tail
+    }
+    
+    mutating func append(value: T) {
+        let newNode = ListNode(value: value)
+        if tail != nil {
+            newNode.previous = tail
+            tail?.next = newNode
         } else {
-            endOfSortedList!.next = l2
-            l2 = l2!.next
+            head = newNode
         }
-        endOfSortedList = endOfSortedList?.next
+        tail = newNode
+    }
+    var description: String {
+        var text = "["
+        var node = head
+        
+        while node != nil {
+            text += "\(node!.value)"
+            node = node?.next
+            if node != nil { text += ", " }
+        }
+        return text + "]"
     }
     
-    endOfSortedList?.next = l1 == nil ? l2 : l1
-    return dummyHead.next
+    
+    mutating func remove(node: ListNode<T>) -> T {
+        let prev = node.previous
+        let next = node.next
+        
+        if let prev = prev {
+            prev.next = next
+        } else {
+            head = next
+        }
+        next?.previous = prev
+        
+        if next == nil {
+            tail = prev
+        }
+        
+        node.previous = nil
+        node.next = nil
+        
+        return node.value
+    }
 }
 
-let list = mergeTwoLists(list1: head, list2: head2)
+var list = LinkedList<Int>()
+list.append(value: 1)
+list.append(value: 2)
+list.append(value: 3)
+list.append(value: 4)
+list.append(value: 5)
+list.remove(node: list.first!)
+list.description
 
-printList(head: list)
+var list2 = LinkedList<String>()
+list2.append(value: "abc")
+list2.append(value: "dfh")
+list2.isEmpty
+list2.first?.value
+list2.description
+list2.remove(node: list2.last!)
+
