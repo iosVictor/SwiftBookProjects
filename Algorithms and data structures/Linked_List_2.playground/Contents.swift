@@ -69,20 +69,83 @@ struct LinkedList<T>: CustomStringConvertible {
     }
 }
 
-var list = LinkedList<Int>()
-list.append(value: 1)
-list.append(value: 2)
-list.append(value: 3)
-list.append(value: 4)
-list.append(value: 5)
-list.remove(node: list.first!)
-list.description
+struct Queue<T>: CustomStringConvertible {
+    private var list = LinkedList<T>()
+    
+    var isEmpty: Bool {
+        return list.isEmpty
+    }
+    
+    mutating func enqueue(element: T) {
+        list.append(value: element)
+    }
+    
+    mutating func dequeue() -> T? {
+        guard !list.isEmpty, let element = list.first else { return nil }
+        list.remove(node: element)
+        return element.value
+    }
+    
+    mutating func peek() -> T? {
+        return list.first?.value
+    }
+    
+    var description: String {
+        return list.description
+    }
+}
 
-var list2 = LinkedList<String>()
-list2.append(value: "abc")
-list2.append(value: "dfh")
-list2.isEmpty
-list2.first?.value
-list2.description
-list2.remove(node: list2.last!)
+func minesweeper(bombs: [[Int]], rows: Int, columns: Int) -> [[Int]] {
+    var field = Array(repeating: Array(repeating: 0, count: columns), count: rows)
+    for bomb in bombs {
+        
+        let row = bomb[0]
+        let column = bomb[1]
+        field[row][column] = -1
+        for i in row - 1...row + 1 {
+            for j in column - 1...column + 1 {
+                if (0 <= i) && (i < rows) && (0 <= j) && (j < columns) && (field[i][j] != -1) {
+                    field[i][j] += 1
+                }
+            }
+        }
+    }
+    return field
+}
 
+var field = minesweeper(bombs: [[0,4],[3,1]], rows: 4, columns: 5)
+field.map { (array) in
+    print(array)
+}
+
+// Расширить доступную часть поля при нажатии
+func click(field: inout [[Int]], givenI: Int, givenJ: Int) -> [[Int]] {
+    var queue = Queue<[Int]>()
+    let rows = field.count
+    let columns = (field.first?.count)!
+    
+    if field[givenI][givenJ] == 0 {
+        field[givenI][givenJ] = -2
+        queue.enqueue(element: [givenI, givenJ])
+    } else {
+        return field
+    }
+    while !queue.isEmpty {
+        let position = queue.dequeue()
+        for i in (position?.first)! - 1...(position?.first)! + 1 {
+            for j in (position?.last)! - 1...(position?.last)! + 1 {
+                if (0 <= i) && (i < rows) && (0 <= j) && (j < columns) && (field[i][j] == 0) {
+                    field[i][j] = -2
+                    queue.enqueue(element: [i,j])
+                }
+            }
+        }
+    }
+    return field
+}
+
+let newField = click(field: &field, givenI: 2, givenJ: 3)
+print("-----------------")
+newField.map { (array) in
+    print(array)
+}
