@@ -1,3 +1,26 @@
+struct Queue<T>: CustomStringConvertible {
+    private var list = LinkedList<T>()
+    
+    mutating func enqueue(element: T) {
+        list.append(element)
+    }
+    
+    func dequeue() -> T? {
+        guard !list.isEmpty, let element = list.first else { return nil }
+        list.remove(element)
+        return element.value
+    }
+    
+    mutating func peek() -> T? {
+        return list.first?.value
+    }
+    
+    var description: String {
+        return list.description
+    }
+}
+
+
 // 1. Бинарное дерево
 //
 //           12
@@ -46,3 +69,27 @@ func search(node: Node?, searchValue: Int) -> Bool {
     }
     
     search(node: headNode, searchValue: 13)
+
+// Максимальная глубина бинарного дерева
+func maxDepth(head: Node?) -> Int {
+    guard let head = head else { return 0 }
+    var maxLevel = 0
+    var queue = Queue<Node>()
+    queue.enqueue(element: head)
+    while !queue.isEmpty {
+        maxLevel += 1
+        let count = queue.count
+        for _ in 0..<count {
+            let current = queue.dequeue()
+            if let left = current?.leftChild {
+                queue.enqueue(element: left)
+            }
+            if let right = current?.rightChild {
+                queue.enqueue(element: right)
+            }
+        }
+    }
+    return maxLevel
+}
+
+maxDepth(head: headNode)
