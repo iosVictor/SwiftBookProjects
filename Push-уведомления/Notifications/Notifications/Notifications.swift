@@ -3,7 +3,7 @@
 //  Notifications
 //
 //  Created by Victor Kimpel on 5.12.23.
-//  Copyright © 2023 Alexey Efimov. All rights reserved.
+//  Copyright © 2023 Victor Kimpel. All rights reserved.
 //
 
 import UIKit
@@ -25,6 +25,12 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
     func getNotificationSettings() {
         notificationCenter.getNotificationSettings { settings in
             print("Notification settings: \(settings)")
+            
+            guard settings.authorizationStatus == .authorized else { return }
+            
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
         }
     }
     
