@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        notifications.messagingDelegate.delegate = (notifications as! any MessagingDelegate)
+        
         return true
     }
     
@@ -49,6 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         error: Error) {
         
             print("Failed to register: \(error)")
+    }
+    
+    func openSettings() {
+        let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+        let settings = storyboard.instantiateViewController(withIdentifier: "Settings")
+        window?.rootViewController = settings
     }
 }
 
