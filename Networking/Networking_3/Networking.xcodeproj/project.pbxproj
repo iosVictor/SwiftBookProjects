@@ -21,6 +21,7 @@
 		EDB9ECF52BA8D1F200B59155 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9ECF42BA8D1F200B59155 /* CollectionViewCell.swift */; };
 		EDB9ECF72BA8D6ED00B59155 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9ECF62BA8D6ED00B59155 /* NetworkManager.swift */; };
 		EDB9ECF92BAA2D3E00B59155 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9ECF82BAA2D3E00B59155 /* ImageProperties.swift */; };
+		EDB9ECFB2BAB546800B59155 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9ECFA2BAB546800B59155 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EDB9ECF42BA8D1F200B59155 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EDB9ECF62BA8D6ED00B59155 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EDB9ECF82BAA2D3E00B59155 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
+		EDB9ECFA2BAB546800B59155 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				A83C30202108401A00592AE4 /* AppDelegate.swift */,
 				EDB9ECF62BA8D6ED00B59155 /* NetworkManager.swift */,
+				EDB9ECFA2BAB546800B59155 /* DataProvider.swift */,
 				EDB9ECF22BA8D1D400B59155 /* MainViewController.swift */,
 				EDB9ECF42BA8D1F200B59155 /* CollectionViewCell.swift */,
 				A806CF93210B4EA300574064 /* ImageViewController.swift */,
@@ -169,6 +172,7 @@
 				EDB9ECF12BA774F000B59155 /* WebsiteDescription.swift in Sources */,
 				EDB9ECF72BA8D6ED00B59155 /* NetworkManager.swift in Sources */,
 				A806CF94210B4EA300574064 /* ImageViewController.swift in Sources */,
+				EDB9ECFB2BAB546800B59155 /* DataProvider.swift in Sources */,
 				A8255C80214103450074F6D0 /* WebViewController.swift in Sources */,
 				A83C30212108401A00592AE4 /* AppDelegate.swift in Sources */,
 				EDB9ECF32BA8D1D400B59155 /* MainViewController.swift in Sources */,
