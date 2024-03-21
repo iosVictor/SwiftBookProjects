@@ -16,8 +16,10 @@ class DataProvider: NSObject {
     
     private lazy var bgSession: URLSession = {
         let config = URLSessionConfiguration.background(withIdentifier: "ru.swiftbook.Networking")
-//        config.isDiscretionary = true
-        config.sessionSendsLaunchEvents = true
+        config.isDiscretionary = true // Запуск задачи в оптимальное время (по умолчанию false)
+        config.timeoutIntervalForResource = 300 // Время ожидания сети в секундах
+        config.waitsForConnectivity = true // Ожидание подключения к сети (по умолчанию true)
+        config.sessionSendsLaunchEvents = true //
         return URLSession(configuration: config, delegate: self, delegateQueue: nil)
     }()
     
@@ -54,7 +56,9 @@ extension DataProvider: URLSessionDelegate {
 
 extension DataProvider: URLSessionDownloadDelegate {
     
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+    func urlSession(_ session: URLSession, 
+                    downloadTask: URLSessionDownloadTask,
+                    didFinishDownloadingTo location: URL) {
         
         print("Did finish downloading: \(location.absoluteString)")
         
@@ -63,7 +67,11 @@ extension DataProvider: URLSessionDownloadDelegate {
         }
     }
     
-    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+    func urlSession(_ session: URLSession, 
+                    downloadTask: URLSessionDownloadTask,
+                    didWriteData bytesWritten: Int64,
+                    totalBytesWritten: Int64,
+                    totalBytesExpectedToWrite: Int64) {
         
         guard totalBytesExpectedToWrite != NSURLSessionTransferSizeUnknown else { return }
         
@@ -73,5 +81,14 @@ extension DataProvider: URLSessionDownloadDelegate {
         DispatchQueue.main.async {
             self.onProgress?(progress)
         }
+    }
+}
+
+extension DataProvider: URLSessionTaskDelegate {
+    
+    // Восстановления соединения
+    func urlSession(_ session: URLSession, taskIsWaitingForConnectivity task: URLSessionTask) {
+        
+        // Ожидание соединения, обновление интерфейса и прочее
     }
 }
