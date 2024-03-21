@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1E-1j-zMM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1E-1j-zMM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,13 +20,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comleted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-2r-Jap">
-                                <rect key="frame" x="150.5" y="424" width="74.5" height="21"/>
+                                <rect key="frame" x="150.5" y="424" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PU7-1p-yCo">
-                                <rect key="frame" x="112.5" y="480" width="150" height="2"/>
+                                <rect key="frame" x="112.5" y="480" width="150" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="4Tu-2Z-oBH"/>
                                 </constraints>
@@ -36,6 +35,7 @@
                                 <rect key="frame" x="177.5" y="355.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="sDJ-Ie-o0x"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ddL-2r-Jap" firstAttribute="centerX" secondItem="PdE-uL-DIr" secondAttribute="centerX" id="4e8-2d-bPu"/>
@@ -49,7 +49,6 @@
                             <constraint firstItem="PdE-uL-DIr" firstAttribute="trailing" secondItem="sDJ-Ie-o0x" secondAttribute="trailing" id="kTW-IZ-jwH"/>
                             <constraint firstItem="PdE-uL-DIr" firstAttribute="bottom" secondItem="vtF-oI-IDi" secondAttribute="bottom" id="oh4-LO-Vij"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="sDJ-Ie-o0x"/>
                     </view>
                     <navigationItem key="navigationItem" title="Image" id="tDy-0P-prn"/>
                     <connections>
@@ -76,21 +75,21 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="X5f-Aq-Pf2" customClass="TableViewCell" customModule="Networking" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5f-Aq-Pf2" id="wRg-ts-WQw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5f-Aq-Pf2" id="wRg-ts-WQw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sYD-Rf-Nnx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="100.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="fmf-i8-GZ6"/>
                                                         <constraint firstAttribute="width" constant="140" id="jqa-vT-iib"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of course" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3s-5T-iU5">
-                                                    <rect key="frame" x="148" y="0.0" width="212" height="41.5"/>
+                                                    <rect key="frame" x="148" y="0.0" width="212" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="41" id="kO2-hk-IHM"/>
                                                     </constraints>
@@ -99,7 +98,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYs-P2-HGw">
-                                                    <rect key="frame" x="148" y="49" width="212" height="16"/>
+                                                    <rect key="frame" x="148" y="48.5" width="212" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="WUl-7Z-Tgd"/>
                                                     </constraints>
@@ -108,7 +107,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC6-oQ-c3l">
-                                                    <rect key="frame" x="148" y="73" width="212" height="16"/>
+                                                    <rect key="frame" x="148" y="72.5" width="212" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="WkS-sC-fpr"/>
                                                     </constraints>
@@ -146,6 +145,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="o3f-ST-XJ6"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="a4u-PX-WLC" firstAttribute="top" secondItem="o3f-ST-XJ6" secondAttribute="top" id="5r7-ys-JNC"/>
@@ -153,7 +153,6 @@
                             <constraint firstItem="a4u-PX-WLC" firstAttribute="trailing" secondItem="o3f-ST-XJ6" secondAttribute="trailing" id="fLZ-ck-sEP"/>
                             <constraint firstItem="a4u-PX-WLC" firstAttribute="leading" secondItem="o3f-ST-XJ6" secondAttribute="leading" id="ntW-O2-Eg8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="o3f-ST-XJ6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Our Curses" id="ZKi-gU-dCv"/>
                     <connections>
@@ -182,9 +181,10 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hSG-0F-PNI">
-                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="4"/>
                             </progressView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jk4-S0-d6d"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hSG-0F-PNI" firstAttribute="top" secondItem="Jk4-S0-d6d" secondAttribute="top" id="A0W-ZG-rXM"/>
@@ -195,7 +195,6 @@
                             <constraint firstItem="hSG-0F-PNI" firstAttribute="leading" secondItem="2KF-Ds-emC" secondAttribute="leading" id="pd3-Cb-0Uh"/>
                             <constraint firstItem="h1D-hC-tuy" firstAttribute="trailing" secondItem="Jk4-S0-d6d" secondAttribute="trailing" id="pgb-Yq-Tkq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Jk4-S0-d6d"/>
                     </view>
                     <navigationItem key="navigationItem" id="tXz-A4-VGr"/>
                     <connections>
@@ -237,7 +236,7 @@
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="ENO-qU-YCI" firstAttribute="leading" secondItem="Suj-Ki-nuj" secondAttribute="leading" id="X17-A5-m5P"/>
                                     <constraint firstItem="ENO-qU-YCI" firstAttribute="top" secondItem="Suj-Ki-nuj" secondAttribute="top" id="jX4-tg-A1Q"/>
@@ -266,6 +265,8 @@
                         <segue destination="Okz-m4-eD1" kind="show" identifier="OurCoursesWithAlamofire" id="o0l-Pa-VHO"/>
                         <segue destination="eEq-kV-HBK" kind="show" identifier="ResponseData" id="Z0t-Fs-l34"/>
                         <segue destination="eEq-kV-HBK" kind="show" identifier="LargeImage" id="eRk-bd-jCn"/>
+                        <segue destination="Okz-m4-eD1" kind="show" identifier="PostRequest" id="wfy-Ht-SKM"/>
+                        <segue destination="Okz-m4-eD1" kind="show" identifier="PutRequest" id="ajR-ez-oH7"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNp-Q0-GA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -292,7 +293,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="o0l-Pa-VHO"/>
+        <segue reference="ajR-ez-oH7"/>
         <segue reference="eRk-bd-jCn"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
